@@ -58,8 +58,8 @@
       "pages": []
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
+      "group": "Get Started",
+      "pages": ["custom/welcome"]
     },
     {
       "group": "Endpoint Examples",
