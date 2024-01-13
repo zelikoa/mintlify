@@ -3,14 +3,30 @@ title: GPT-4
 description: 'Feel the power of GPT-4'
 ---
 
+<div id="displayArea"></div>
+
+<script>
+  function displayText() {
+    // Get the entered text
+    var enteredText = document.getElementById("textInput").value;
+
+    // Display the text in the designated area
+    document.getElementById("displayArea").innerHTML = "<p>Submitted Text: " + enteredText + "</p>";
+  }
+</script>
+
+<!-- Text input field -->
 <input
   type="text"
   placeholder="Enter your prompt here"
-  className="dark"
+  id="textInput"
+  class="your-input-class"
 />
 
+<!-- Submit button -->
 <input
-  type="submit"
+  type="button"
   value="Submit"
-  className="dark"
+  onclick="displayText()"
+  class="your-submit-button-class"
 />
