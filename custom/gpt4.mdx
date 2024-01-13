@@ -1,28 +1,7 @@
 ---
-title: GPT-4
-description: 'Feel the power of GPT-4'
+title: GPT-4 MDX Form
+description: 'Feel the power of GPT-4 in MDX'
 ---
 
-<div id="displayArea"></div>
-
-<script>
-  function displayText() {
-    var enteredText = document.getElementById("textInput").value;
-
-    document.getElementById("displayArea").innerHTML = "<p>Submitted Text: " + enteredText + "</p>";
-  }
-</script>
-
-<input
-  type="text"
-  placeholder="Enter your prompt here"
-  id="textInput"
-  class="your-input-class"
-/>
-
-<input
-  type="button"
-  value="Submit"
-  onclick="displayText()"
-  class="your-submit-button-class"
-/>
+import GPTForm from './gptForm';
+<GPTForm />
