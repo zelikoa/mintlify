@@ -29,13 +29,13 @@
     {
       "name": "App",
       "url": "custom"
-    },
-    {
-      "name": "Documentation",
-      "url": "docs"
     }
   ],
   "navigation": [
+    {
+      "group": "Docs",
+      "pages": ["docs/docs"]
+    },
     {
       "group": "Get Started",
       "pages": ["custom/welcome"]
