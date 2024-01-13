@@ -35,6 +35,10 @@
     {
       "group": "Get Started",
       "pages": ["custom/welcome"]
+    },
+    {
+      "group": "API Documentation",
+      "pages": ["api-reference/introduction"]
     }
   ],
   "footerSocials": {
