@@ -7,15 +7,12 @@ description: 'Feel the power of GPT-4'
 
 <script>
   function displayText() {
-    // Get the entered text
     var enteredText = document.getElementById("textInput").value;
 
-    // Display the text in the designated area
     document.getElementById("displayArea").innerHTML = "<p>Submitted Text: " + enteredText + "</p>";
   }
 </script>
 
-<!-- Text input field -->
 <input
   type="text"
   placeholder="Enter your prompt here"
@@ -23,7 +20,6 @@ description: 'Feel the power of GPT-4'
   class="your-input-class"
 />
 
-<!-- Submit button -->
 <input
   type="button"
   value="Submit"
