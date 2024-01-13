@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "GPT",
+  "name": "ClosedAI",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -9,9 +9,9 @@
   "colors": {
     "primary": "#DAEB26",
     "light": "#c8d911",
-    "dark": "#b4c221",
+    "dark": "#0D9373",
     "anchors": {
-      "from": "#b4c221",
+      "from": "#0D9373",
       "to": "#c8d911"
     }
   },
