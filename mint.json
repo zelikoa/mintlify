@@ -41,7 +41,7 @@
     },
     {
       "group": "Try",
-      "pages": ["custom/gpt4"]
+      "pages": ["custom/gpt4", "custom/gpt3"]
     }
   ],
   "footerSocials": {
