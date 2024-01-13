@@ -22,8 +22,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "GPT",
-    "url": "https://zelikoaki.mintlify.app/custom/gpt4"
+    "name": "GPT-4",
+    "url": "custom/gpt4"
   },
   "tabs": [
     {
