@@ -3,5 +3,20 @@ title: GPT-4 MDX Form
 description: 'Feel the power of GPT-4 in MDX'
 ---
 
-import GPTForm from './gptForm';
-<GPTForm />
+<form id="gptForm">
+  <label for="prompt">Enter your prompt here:</label>
+  <input
+    type="text"
+    id="prompt"
+    name="prompt"
+    placeholder="Enter your prompt here"
+    class="dark"
+  />
+  <br />
+  <input
+    type="button"
+    value="Submit"
+    class="dark"
+    onclick="submitForm()"
+  />
+</form>
