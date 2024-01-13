@@ -14,12 +14,6 @@
       "to": "#f003fc"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
   "topbarCtaButton": {
     "name": "Try latest GPT",
     "url": "custom/gpt4"
