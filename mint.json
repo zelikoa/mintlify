@@ -22,13 +22,17 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "GPT-4",
+    "name": "Try latest GPT",
     "url": "custom/gpt4"
   },
   "tabs": [
     {
       "name": "App",
       "url": "custom"
+    },
+    {
+      "name": "Documentation",
+      "url": "docs"
     }
   ],
   "navigation": [
