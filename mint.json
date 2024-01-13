@@ -27,7 +27,7 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "App",
       "url": "custom"
     }
   ],
@@ -37,7 +37,7 @@
       "pages": ["custom/welcome"]
     },
     {
-      "group": "App",
+      "group": "Try",
       "pages": ["custom/gpt4"]
     }
   ],
