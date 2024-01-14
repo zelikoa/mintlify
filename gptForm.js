@@ -1,15 +1,38 @@
-import React from 'react';
+// gptForm.js
+import React, { useState } from 'react';
 
-export default function Highlight({children, color}) {
+const GPTForm = () => {
+  const [prompt, setPrompt] = useState('');
+  const [result, setResult] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setResult(`You entered: **${prompt}**`);
+  };
+
   return (
-    <span
-      style={{
-        backgroundColor: color,
-        borderRadius: '2px',
-        color: '#fff',
-        padding: '0.2rem',
-      }}>
-      {children}
-    </span>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="prompt">Enter your prompt here:</label>
+        <input
+          type="text"
+          id="prompt"
+          name="prompt"
+          placeholder="Enter your prompt here"
+          className="dark"
+          value={prompt}
+          onChange={(e) => setPrompt(e.target.value)}
+        />
+        <br />
+        <input
+          type="submit"
+          value="Submit"
+          className="dark"
+        />
+      </form>
+      <div dangerouslySetInnerHTML={{ __html: result }} />
+    </div>
   );
-}
+};
+
+export default GPTForm;

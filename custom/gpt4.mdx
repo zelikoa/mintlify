@@ -3,19 +3,41 @@ title: GPT-4
 description: 'Feel the power of GPT-4'
 ---
 
-export const Highlight = ({children, color}) => (
-  <span
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.2rem',
-    }}>
-    {children}
-  </span>
-);
+const GPTForm = () => {
+  const [prompt, setPrompt] = useState('');
+  const [result, setResult] = useState('');
 
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setResult(`You entered: **${prompt}**`);
+  };
+
+  return (
+    <div>
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="prompt">Enter your prompt here:</label>
+        <input
+          type="text"
+          id="prompt"
+          name="prompt"
+          placeholder="Enter your prompt here"
+          className="dark"
+          value={prompt}
+          onChange={(e) => setPrompt(e.target.value)}
+        />
+        <br />
+        <input
+          type="submit"
+          value="Submit"
+          className="dark"
+        />
+      </form>
+      <div dangerouslySetInnerHTML={{ __html: result }} />
+    </div>
+  );
+};
+
+<GPTForm />
 
 I can write **Markdown** alongside my _JSX_!
 
