@@ -5,6 +5,10 @@ description: 'This page is for testing purposes'
 
 I can write **Markdown** alongside my _JSX_!!!!!
 
+const handleButtonClick = () => {
+    console.log(`Docusaurus green clicked`);
+};
+
 export const Button = ({ children, color, onClick }) => (
   <button
     style={{
@@ -29,7 +33,7 @@ export const Button = ({ children, color, onClick }) => (
   className="dark"
 />
 
-<Button color="#25c2a0" onClick={() => console.log('Docusaurus green clicked')}>
+<Button color="#25c2a0" onClick={handleButtonClick}>
   Submit
 </Button>
 
