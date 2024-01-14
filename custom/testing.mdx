@@ -5,21 +5,24 @@ description: 'This page is for testing purposes'
 
 I can write **Markdown** alongside my _JSX_!!!!!
 
-export const TextInputBox = ({ value, onChange }) => {
-  return (
-    <input
-      type="text"
-      value={value}
-      onChange={(e) => onChange(e.target.value)}
-      style={{
-        padding: '0.5rem',
-        fontSize: '1rem',
-        border: '1px solid #ccc',
-        borderRadius: '4px',
-      }}
-    />
-  );
-};
+export const Button = ({ children, color }) => (
+  <input
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.5rem 1rem',
+      cursor: 'pointer',
+      border: 'none',
+      outline: 'none',
+    }}
+  >
+    {children}
+  </input>
+);
 
-<TextInputBox value={textInputValue} onChange={handleInputChange} />
+// Example usage:
+<Button color="#25c2a0">
+  Click me (Docusaurus green)
+</Button>
 
