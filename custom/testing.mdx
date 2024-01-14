@@ -26,9 +26,7 @@ export const Button = ({ children, color, onClick }) => (
   Click me (Docusaurus green)
 </Button>
 
-
-const TextInput = ({ value, onChange, placeholder, highlightColor }) => {
-  return (
+export const TextInput = ({ value, onChange, placeholder, highlightColor }) => (
     <div>
       <label style={{ color: '#333', marginBottom: '0.5rem', display: 'block' }}>
         Enter text:
@@ -47,8 +45,7 @@ const TextInput = ({ value, onChange, placeholder, highlightColor }) => {
         }}
       />
     </div>
-  );
-};
+);
 
 <TextInput
     value={inputValue}
