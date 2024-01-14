@@ -3,35 +3,25 @@ title: Testing
 description: 'This page is for testing purposes'
 ---
 
-export const TextInputForm = () => {
-  const [inputText, setInputText] = useState('');
-  const [displayedText, setDisplayedText] = useState('');
+I can write **Markdown** alongside my _JSX_!!!!!
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setDisplayedText(inputText);
-  };
+export const Button = ({ children, color, onClick }) => (
+  <button
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.5rem 1rem',
+      cursor: 'pointer',
+      border: 'none',
+      outline: 'none',
+    }}
+    onClick={onClick}
+  >
+    {children}
+  </button>
+);
 
-  return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Enter Text:
-          <input
-            type="text"
-            value={inputText}
-            onChange={(e) => setInputText(e.target.value)}
-          />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      {displayedText && (
-        <div>
-          <p>Entered Text: {displayedText}</p>
-        </div>
-      )}
-    </div>
-  );
-};
-
-<TextInputForm />
+<Button color="#25c2a0" onClick={() => console.log('Docusaurus green clicked')}>
+  Click me (Docusaurus green)
+</Button>
