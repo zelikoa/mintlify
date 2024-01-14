@@ -3,24 +3,30 @@ title: GPT-4
 description: 'Feel the power of GPT-4'
 ---
 
-export const Button = ({ children, color }) => (
+export const Button = ({ children, color, onClick }) => (
   <button
     style={{
       backgroundColor: color,
       borderRadius: '2px',
       color: '#fff',
       padding: '0.5rem 1rem',
-      cursor: 'default', // To indicate it's not clickable
+      cursor: 'pointer',
       border: 'none',
       outline: 'none',
     }}
+    onClick={onClick}
   >
     {children}
   </button>
 );
 
-// Example usage:
-<Button color="#808080">Click me (Does nothing)</Button>
+<Button color="#25c2a0" onClick={() => console.log('Docusaurus green clicked')}>
+  Click me (Docusaurus green)
+</Button>
+
+<Button color="#1877F2" onClick={() => console.log('Facebook blue clicked')}>
+  Click me (Facebook blue)
+</Button>
 
 I can write **Markdown** alongside my _JSX_!
 
