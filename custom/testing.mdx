@@ -25,3 +25,34 @@ export const Button = ({ children, color, onClick }) => (
 <Button color="#25c2a0" onClick={() => console.log('Docusaurus green clicked')}>
   Click me (Docusaurus green)
 </Button>
+
+
+const TextInput = ({ value, onChange, placeholder, highlightColor }) => {
+  return (
+    <div>
+      <label style={{ color: '#333', marginBottom: '0.5rem', display: 'block' }}>
+        Enter text:
+      </label>
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        style={{
+          padding: '0.5rem',
+          borderRadius: '4px',
+          border: `2px solid ${highlightColor}`,
+          outline: 'none',
+          width: '300px',
+        }}
+      />
+    </div>
+  );
+};
+
+<TextInput
+    value={inputValue}
+    onChange={handleInputChange}
+    placeholder="Type here"
+    highlightColor="#25c2a0"
+/>
