@@ -1,5 +1,4 @@
 // gptForm.js
-import React, { useState } from 'react';
 
 const GPTForm = () => {
   const [prompt, setPrompt] = useState('');
