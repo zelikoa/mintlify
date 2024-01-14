@@ -1,16 +1,22 @@
 ---
-title: GPT-3
-description: 'Feel the power of GPT-3'
+title: GPT-4
+description: 'Feel the power of GPT-4'
 ---
 
-<input
-  type="text"
-  placeholder="Enter your prompt here"
-  className="dark"
-/>
-
-<input
-  type="submit"
-  value="Submit"
-  className="dark"
-/>
+<form id="gptForm">
+  <label for="prompt">Enter your prompt here:</label>
+  <input
+    type="text"
+    id="prompt"
+    name="prompt"
+    placeholder="Enter your prompt here"
+    class="dark"
+  />
+  <br />
+  <input
+    type="button"
+    value="Submit"
+    class="dark"
+    onclick="submitForm()"
+  />
+</form>
