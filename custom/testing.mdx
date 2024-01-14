@@ -8,8 +8,9 @@ I can write **Markdown** alongside my _JSX_!!!!!
 export const handleButtonClick = () => {
     var inputElement = document.getElementById("promptInputBox");
     var inputValue = inputElement.value;
-    console.log(inputValue);
-    console.log(`Docusaurus green clicked 2`);
+    console.log("Got " + inputValue);
+    var displayArea = document.getElementById("displayArea");
+    displayArea.textContent = inputValue;
 };
 
 export const Button = ({ children, color, onClick }) => (
@@ -29,6 +30,8 @@ export const Button = ({ children, color, onClick }) => (
   </button>
 );
 
+<span id="displayArea"></span>
+
 <input
   id="promptInputBox"
   type="text"
@@ -36,7 +39,7 @@ export const Button = ({ children, color, onClick }) => (
   className="dark"
 />
 
-<Button color="#25c2a0" onClick={handleButtonClick}>
+<Button color="#f003fc" onClick={handleButtonClick}>
   Submit
 </Button>
 
