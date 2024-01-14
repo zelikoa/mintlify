@@ -6,7 +6,9 @@ description: 'This page is for testing purposes'
 I can write **Markdown** alongside my _JSX_!!!!!
 
 export const handleButtonClick = () => {
-    console.log(`Docusaurus green clicked 1`);
+    var inputElement = document.getElementById("promptInputBox");
+    var inputValue = inputElement.value;
+    console.log(inputValue);
     console.log(`Docusaurus green clicked 2`);
 };
 
