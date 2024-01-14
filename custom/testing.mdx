@@ -5,27 +5,6 @@ description: 'This page is for testing purposes'
 
 I can write **Markdown** alongside my _JSX_!!!!!
 
-export const Button = ({ children, color, onClick }) => (
-  <button
-    style={{
-      backgroundColor: color,
-      borderRadius: '2px',
-      color: '#fff',
-      padding: '0.5rem 1rem',
-      cursor: 'pointer',
-      border: 'none',
-      outline: 'none',
-    }}
-    onClick={onClick}
-  >
-    {children}
-  </button>
-);
-
-<Button color="#25c2a0" onClick={() => console.log('Docusaurus green clicked')}>
-  Click me (Docusaurus green)
-</Button>
-
 export const TextInput = ({ value, onChange, placeholder }) => (
   <input
     type="text"
