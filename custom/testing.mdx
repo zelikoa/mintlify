@@ -58,7 +58,7 @@ export const Button = ({ children, color, onClick }) => (
 );
 
 <ResponseField name="Answer">
-  <span id="displayArea"></span>
+  <span id="displayArea">How can I help you?</span>
 </ResponseField>
 
 <ResponseField name="Prompt">
@@ -68,10 +68,9 @@ export const Button = ({ children, color, onClick }) => (
         placeholder="Enter your prompt here"
         className="dark"
     />
+
+    <Button color="#f003fc" onClick={handleButtonClick}>
+        Submit
+    </Button>
 </ResponseField>
-
-
-<Button color="#f003fc" onClick={handleButtonClick}>
-  Submit
-</Button>
 
