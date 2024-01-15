@@ -44,9 +44,10 @@ export const Button = ({ children, color, onClick }) => (
   <button
     style={{
       backgroundColor: color,
-      borderRadius: '2px',
+      borderRadius: '4px',
       color: '#fff',
-      padding: '0.5rem 1rem',
+      padding: '0.5rem 0.5rem',
+      margin: 1rem,
       cursor: 'pointer',
       border: 'none',
       outline: 'none',
@@ -67,6 +68,14 @@ export const Button = ({ children, color, onClick }) => (
         type="text"
         placeholder="Enter your prompt here"
         className="dark"
+        style={{
+            padding: '10px',
+            fontSize: '16px',
+            border: '2px solid #f003fc',
+            borderRadius: '4px',
+            backgroundColor: '#222',
+            color: '#fff',
+        }}
     />
 
     <Button color="#f003fc" onClick={handleButtonClick}>
