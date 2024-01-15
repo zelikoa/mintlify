@@ -34,8 +34,6 @@ export const handleButtonClick = () => {
         const data = JSON.parse(xhr.responseText);
         const message = data.message;
         displayArea.textContent = message;
-        const result = JSON.stringify(data, null, 4);
-        console.log(result);
     }
     };
 
@@ -73,4 +71,13 @@ export const Button = ({ children, color, onClick }) => (
 <Button color="#f003fc" onClick={handleButtonClick}>
   Submit
 </Button>
+
+<CardGroup cols={1}>
+  <Card
+    id="answerCard"
+    title="Answer"
+    icon="pen-to-square"
+  >
+  </Card>
+</CardGroup>
 
