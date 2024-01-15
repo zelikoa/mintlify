@@ -6,9 +6,16 @@ description: 'This page is for testing purposes'
 I can write **Markdown** alongside my _JSX_!!!!!
 
 export const handleButtonClick = () => {
+    var inputElement = document.getElementById("inputBox");
+
+    var inputValue = inputElement.value;
+
+    var displayArea = document.getElementById("displayArea");
+    displayArea.textContent = "Thinking...";
 
 
-    const prompt = "what is the difference between a black hole and a star?";
+
+    const prompt = inputValue;
     const url = "https://capzwkrgg4j4rq66m3uoht26wa0zbkii.lambda-url.eu-central-1.on.aws/generate_deployed";
 
     const params = {
@@ -25,7 +32,9 @@ export const handleButtonClick = () => {
     xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
         const data = JSON.parse(xhr.responseText);
-        console.log(JSON.stringify(data, null, 4));
+        const result = JSON.stringify(data, null, 4);
+        console.log(result);
+        displayArea.textContent = result;
     }
     };
 
