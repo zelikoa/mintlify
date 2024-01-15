@@ -32,9 +32,10 @@ export const handleButtonClick = () => {
     xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
         const data = JSON.parse(xhr.responseText);
+        const message = data.message;
+        displayArea.textContent = message;
         const result = JSON.stringify(data, null, 4);
         console.log(result);
-        displayArea.textContent = result;
     }
     };
 
