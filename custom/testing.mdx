@@ -3,8 +3,6 @@ title: Testing
 description: 'This page is for testing purposes'
 ---
 
-I can write **Markdown** alongside my _JSX_!!!!!
-
 export const handleButtonClick = () => {
     var inputElement = document.getElementById("promptInputBox");
 
@@ -59,18 +57,21 @@ export const Button = ({ children, color, onClick }) => (
   </button>
 );
 
-<input
-  id="promptInputBox"
-  type="text"
-  placeholder="Enter your prompt here"
-  className="dark"
-/>
+<ResponseField name="Answer">
+  <span id="displayArea"></span>
+</ResponseField>
+
+<ResponseField name="Prompt">
+    <input
+        id="promptInputBox"
+        type="text"
+        placeholder="Enter your prompt here"
+        className="dark"
+    />
+</ResponseField>
+
 
 <Button color="#f003fc" onClick={handleButtonClick}>
   Submit
 </Button>
-
-<ResponseField name="Answer">
-  <span id="displayArea"></span>
-</ResponseField>
 
