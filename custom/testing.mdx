@@ -8,7 +8,7 @@ export const handleButtonClick = () => {
 
     var inputValue = inputElement.value;
 
-    var displayArea = document.getElementById("displayArea");
+    var displayArea = document.getElementById("answerArea");
     displayArea.textContent = "Thinking...";
 
 
@@ -58,7 +58,7 @@ export const Button = ({ children, color, onClick }) => (
 );
 
 <ResponseField name="Answer">
-  <span id="displayArea">How can I help you?</span>
+  <span id="answerArea">How can I help you?</span>
 </ResponseField>
 
 <ResponseField name="Prompt">
@@ -66,7 +66,7 @@ export const Button = ({ children, color, onClick }) => (
         id="promptInputBox"
         type="text"
         placeholder="Enter your prompt here"
-        className="h-14 w-full border-0 bg-transparent pl-14 pr-6 text-gray-900 dark:text-gray-100 placeholder-gray-400 focus:ring-0 focus:outline-none"
+        className="dark"
         style={{
             padding: '10px',
             fontSize: '16px',
