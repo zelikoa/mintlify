@@ -16,15 +16,15 @@
   },
   "topbarCtaButton": {
     "name": "Try latest GPT",
-    "url": "custom/gpt4"
+    "url": "apps/gpt4"
   },
   "tabs": [
     {
-      "name": "App",
-      "url": "custom"
+      "name": "Apps",
+      "url": "apps"
     },{
-      "name": "Blog",
-      "url": "blog"
+      "name": "Blogs",
+      "url": "blogs"
     }
   ],
   "navigation": [
@@ -34,15 +34,15 @@
     },
     {
       "group": "Get Started",
-      "pages": ["custom/welcome"]
+      "pages": ["apps/welcome"]
     },
     {
       "group": "Try",
-      "pages": ["custom/gpt4", "custom/gpt3", "custom/testing"]
+      "pages": ["apps/gpt4", "apps/gpt3", "apps/testing"]
     },
     {
-      "group": "Blog",
-      "pages": ["blog/blog"]
+      "group": "Blog Posts",
+      "pages": ["blogs/blog1", "blogs/blog2"]
     }
   ],
   "footerSocials": {
