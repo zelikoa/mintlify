@@ -42,7 +42,7 @@
     },
     {
       "group": "Blog Posts",
-      "pages": ["blogs/blog1", "blogs/blog2"]
+      "pages": ["blogs/post1", "blogs/post2"]
     }
   ],
   "footerSocials": {
