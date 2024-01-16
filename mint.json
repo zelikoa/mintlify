@@ -43,6 +43,19 @@
     {
       "group": "Animals",
       "pages": ["blogs/animals/cats", "blogs/animals/dogs", "blogs/animals/sharks"]
+    },
+    {
+      "group": "Animals",
+        "pages": [
+            {
+              "group": "Land",
+              "pages": ["blogs/animals/land/cats", "blogs/animals/land/dogs"]
+            },
+            {
+              "group": "Sea",
+              "pages": ["blogs/animals/sea/sharks"]
+            }
+        ]
     }
   ],
   "footerSocials": {
