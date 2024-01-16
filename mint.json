@@ -42,7 +42,7 @@
     },
     {
       "group": "Animals",
-      "pages": ["blogs/animals/cats", "blogs/animals/dogs"]
+      "pages": ["blogs/animals/cats", "blogs/animals/dogs", "blogs/animals/sharks"]
     }
   ],
   "footerSocials": {
