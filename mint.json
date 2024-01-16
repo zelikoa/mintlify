@@ -52,6 +52,37 @@
               "pages": ["blogs/animals/sea/sharks"]
             }
         ]
+    },
+    {
+      "group": "Tech",
+        "pages": [
+            {
+              "group": "IT",
+              "pages": [
+                {
+                  "group": "DevOps",
+                  "pages": [
+                    {
+                      "group": "Docker",
+                      "pages": ["blogs/tech/it/devops/docker/containers", "blogs/tech/it/devops/docker/docker-compose"]
+                    },
+                    {
+                      "group": "Kubernetes",
+                      "pages": ["blogs/tech/it/devops/kubernetes/pods", "blogs/tech/it/devops/kubernetes/deployments", "blogs/tech/it/devops/kubernetes/services"]
+                    },
+                    {
+                      "group": "Jenkins",
+                      "pages": ["blogs/tech/it/devops/jenkins/pipelines", "blogs/tech/it/devops/jenkins/jobs"]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "group": "Sea",
+              "pages": ["blogs/animals/sea/sharks"]
+            }
+        ]
     }
   ],
   "footerSocials": {
