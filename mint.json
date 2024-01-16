@@ -22,6 +22,9 @@
     {
       "name": "App",
       "url": "custom"
+    },{
+      "name": "Blog",
+      "url": "blog"
     }
   ],
   "navigation": [
@@ -36,11 +39,16 @@
     {
       "group": "Try",
       "pages": ["custom/gpt4", "custom/gpt3", "custom/testing"]
+    },
+    {
+      "group": "Blog",
+      "pages": ["blog/blog"]
     }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com",
     "github": "https://github.com",
-    "linkedin": "https://www.linkedin.com"
+    "linkedin": "https://www.linkedin.com",
+    "youtube": "https://www.youtube.com"
   }
 }
