@@ -41,8 +41,8 @@
       "pages": ["apps/gpt4", "apps/gpt3", "apps/testing"]
     },
     {
-      "group": "Blog Posts",
-      "pages": ["blogs/post1", "blogs/post2"]
+      "group": "Animals",
+      "pages": ["blogs/animals/cats", "blogs/animals/dogs"]
     }
   ],
   "footerSocials": {
